@@ -1,0 +1,121 @@
+/* Header.module.css */
+.header {
+    background-image: url('../public/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 512px; /* Adjust the height as needed */
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   
+    
+     /* Adjust text size as needed */
+  }
+  .overlay{
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 512px;
+display: flex;
+justify-content: space-between;
+align-items: normal;
+
+flex-direction: column;
+
+  }
+  .overlayTop{
+    margin: 0;
+    background: linear-gradient(to bottom, rgba(14, 14, 14, 1) 0%, rgba(19, 19, 19, 0) 100%);
+
+
+    width: 100%;
+    height: 137px;
+  }
+  .overlayBottom{
+    margin: 0;
+    background: linear-gradient(to top, rgba(14, 14, 14, 1) 0%, rgba(19, 19, 19, 0) 100%);
+    width: 100%;
+    height: 317px;
+  }
+  .headerTop{
+    width: 84.17%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;
+    z-index: 133;
+    
+    font-family: 'Helvetica', sans-serif;
+  }
+  .links{
+    width: 158px;
+    display: flex;
+    justify-content: space-between;
+    height: 14px;
+    
+  }
+  .links a{
+    font-family: 'Helvetica Regular', sans-serif;
+    font-weight: normal;
+    letter-spacing: 1.44px;
+    color: white; /* Adjust text color for better visibility */
+    font-size: 12px;
+    text-decoration: none;
+  }
+
+  .headerBottom{
+    margin-top: 84px;
+    z-index: 1333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .headerBottom h1{
+    
+    font-family: 'Helvetica', sans-serif;
+    font-size: 37px;
+    text-align: center;
+    color: #fff;
+    padding: 0;
+    margin: 18px 0 0 0;
+    font-weight: 700;
+  }
+  @media (max-width: 768px) {
+    .overlay{
+      
+      height: 288px;
+    }
+    .headerTop{
+      
+      margin-top:  5px;
+    }
+    .header{
+      height: 288px;
+      background-size: cover;
+      background-image: url('../public/header-bg-mb.png');
+    }
+    .links{
+      display: none;
+    }
+    .line{
+      display: none;
+    }
+    .header .logoHeader{
+        width: 75px;
+        height: auto;
+    }
+    .headerBottom{
+      
+      margin: 28px;
+      height: auto;
+    }
+    .headerBottom h1{
+      padding: 0;
+      margin: 0;
+      font-size: 20px;
+      
+      padding: 22px 0;
+    }
+  }

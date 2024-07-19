@@ -1,0 +1,23 @@
+.loginLink{
+    font-size: 12px;
+    color: white;
+    font-family: 'Helvetica Regular', sans-serif;
+    letter-spacing: 1.44px;
+    text-decoration: none;
+    width: 159px;
+    height: 66px;
+    background: transparent;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    .loginLink{
+        font-size: 12px;
+        border: none;
+        width: auto;
+        padding: 0;
+      }
+  }

@@ -1,0 +1,100 @@
+.footer{
+    display: flex;
+    align-items: center;
+    height: 382px;
+    background-color: black;
+    background-image: url('../public/footerbg.png');
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.footerContent{
+    display: flex;
+    margin-left: 12.4%;
+}
+.footerRight{
+margin-left: 93px;
+display: flex;
+flex-direction: column;
+cursor: default;
+}
+.footer h1{
+    font-family: 'Didot';
+    font-weight: 400;
+    color: #fff;
+    font-size: 36px;
+    padding: 0;
+    margin: 0;
+    padding-top: 41px;
+    cursor: default;
+    width: 492px;
+}
+.text{
+    font-family: 'Helvetica Light', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    padding-top: 9px;
+    margin-bottom: 36px;
+    letter-spacing: 0.32px;
+    line-height: 130%;
+    cursor: default;
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .footer{
+        width: 100vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 505px;
+        
+    background-image: url('../public/footerbg-mb.png');
+    }
+    .footerContent{
+        margin: 0;
+        flex-direction: column;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerImg{
+        margin: 0;
+        padding: 0;
+        width: 119px;
+    }
+    .footerLeft{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerRight{
+        margin: 0;
+        padding: 0;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerRight h1{
+        font-size: 24px;
+        text-align: center;
+        width: 270px;
+        line-height: 31.2px;
+        padding-top: 27px;
+    }
+    .text{
+        text-align: center;
+     width: 290.48px;
+     letter-spacing: 0.32px;
+     font-size: 14px;
+     font-weight: 300;
+     line-height: 26px;
+     margin-top: 27px;
+    }
+}

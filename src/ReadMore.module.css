@@ -1,0 +1,194 @@
+/* Home.module.css */
+
+.container {
+    height: 1375px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .content {
+    width: 404px;
+  }
+  .headingOffer{
+    font-family: 'Helvetica', sans-serif;
+    font-size: 14px;
+    
+    line-height: 42px;
+    padding: 0;
+    margin: 0;
+  }
+  .headingBirthday{
+    font-family: 'Helvetica', sans-serif;
+    font-size: 37px;
+    padding: 0;
+    margin: 16px 0 0 0;
+  }
+  .line{
+    padding: 32px 0;
+  }
+
+.headingDate{
+    font-family: 'Helvetica', sans-serif;
+    font-size: 14px;
+    
+    line-height: 42px;
+    padding: 0;
+    margin: 0;
+    
+    margin-bottom: 25px;
+}
+.linkReadMore {
+    font-size: 14px;
+    color: #0E0909;
+    text-decoration: underline;
+    padding: 0;
+}
+.headingExclusive{
+    padding: 0;
+    margin: 8px 0 0 0;
+    font-size: 20px;
+    font-family: 'Helvetica Light', sans-serif;
+    
+    font-style: normal;
+    font-weight: 400;
+}
+.headingWinner{
+    padding: 0;
+    margin: 8px 0 0 0;
+    font-size: 16px;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 700;
+    margin-top: 27px;
+    margin-bottom: 3px;
+    width: 364px;
+}
+.headingDraw{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 700;
+    margin-top: 27px;
+    margin-bottom: 3px;
+}
+.text{
+    margin: 24px 0;
+    font-family: 'Helvetica Light', sans-serif;
+    font-size: 15.75px;
+    letter-spacing: 0.32px;
+    line-height: 26px;
+}
+.weeks{
+    display: flex;
+    flex-direction: column;
+    width: 404px;
+}
+.weekContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 26px;
+
+}
+.weekNumber{
+font-size: 16px;
+font-family: 'Helvetica Light', sans-serif;
+font-weight: 300;
+}
+.weekDescription{
+    font-size: 15.75px;
+    font-family: 'Helvetica Light', sans-serif;
+    font-weight: 300;
+    width: 308.95px;
+
+    }
+    .headingBottom{
+        padding: 0;
+    margin: 52px 0 0 0;
+    font-size: 16px;
+    font-family: 'Helvetica Light', sans-serif;
+    
+    font-style: normal;
+    font-weight: 400;
+    }
+
+
+    @media (max-width: 768px) {
+        .content {
+            width: 337px;
+            height: auto;
+    
+          }
+        .container{
+            min-height: none;
+            height: 1050px;
+            width: 100%;
+        }
+        .headingOffer{
+            font-size: 13.78px;
+        }
+        .headingBirthday{
+            font-size: 21px;
+            margin-top: 0;
+            width: 100%;
+        }
+        .line{
+            width: 48px;
+            padding: 16px 0 0 0;
+        }
+        .headingDate{
+            margin: 0;
+            padding: 0;
+        }
+        .headingExclusive{
+            margin-top: 7px;
+            font-family: 'Helvetica Light', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            
+            letter-spacing: 0.32px;
+        }
+        .headingWinner{
+            font-size: 14px;
+            width: 310px;
+            margin-top: 24px;
+            padding-bottom: 8px;
+        }
+        .text{
+            margin: 16px 0 0 0;
+            font-family: 'Helvetica Light', sans-serif;
+            width: 100%;
+            font-weight: 300;
+            font-size: 13.78px;
+            letter-spacing: 0.28px;
+            line-height: 24px;
+        }
+        .headingDraw{
+            margin-top: 25px;
+            font-size: 14px;
+        }
+        .weeks{
+            font-size: 14px;
+            width: 100%;
+            margin-top: 4px;
+        }
+        .weekContainer{
+            width: 330px;
+            align-items: center;
+        }
+        .weekNumber{
+            width: 110px;
+            font-size: 14px;
+        }
+        .weekDescription{
+            width: 220px;
+            font-size: 13.56px;
+        }
+        .headingBottom{
+            margin-top: 28px;
+            font-size: 13.89px;
+        }
+    
+    }

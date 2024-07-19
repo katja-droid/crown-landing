@@ -1,0 +1,85 @@
+/* Home.module.css */
+
+.container {
+    min-height: 35vh;
+    height: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  
+  .content {
+    width: 370px;
+    height: 271px;
+  }
+  .headingOffer{
+    font-family: 'Helvetica', sans-serif;
+    font-size: 14px;
+    
+    line-height: 42px;
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+  }
+  .headingBirthday{
+    font-family: 'Helvetica', sans-serif;
+    font-size: 37px;
+    padding: 0;
+    margin: 16px 0 0 0;
+    font-weight: 700;
+  }
+  .line{
+    padding: 32px 0;
+  }
+
+.headingDate{
+    font-family: 'Helvetica', sans-serif;
+    font-size: 14px;
+    
+    line-height: 42px;
+    padding: 0;
+    margin: 0;
+    
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+.linkReadMore {
+    font-family: 'Source Sans Pro', sans-serif;
+                                                
+    font-size: 14px;
+    color: #0E0909;
+    text-decoration: underline;
+    padding: 0;
+    font-weight: 300;
+}
+@media (max-width: 768px) {
+    .content {
+        width: 334px;
+        height: auto;
+
+      }
+    .container{
+        min-height: none;
+        height: 300px;
+        width: 100%;
+    }
+    .headingOffer{
+        font-size: 13.78px;
+        margin-top: 25px;
+    }
+    .headingBirthday{
+        font-size: 21px;
+        margin-top: 0;
+    }
+    .line{
+        width: 48px;
+        padding: 16px 0;
+    }
+    .headingDate{
+        margin: 0;
+    }
+
+
+}
