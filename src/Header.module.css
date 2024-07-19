@@ -83,15 +83,15 @@ flex-direction: column;
     font-weight: 700;
   }
   @media (max-width: 768px) {
+    
     .overlay{
       
       height: 288px;
     }
     .headerTop{
       
-      margin-top:  5px;
       width: 350px;
-      margin-top: 12px;
+      margin-top: 8px;
     }
     .header{
       height: 288px;

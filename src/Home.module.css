@@ -58,17 +58,18 @@
 @media (max-width: 768px) {
     .content {
         width: 334px;
-        height: auto;
-
+        min-height: none;
       }
     .container{
         min-height: none;
-        height: 300px;
         width: 100%;
+    margin: 0;
+    
+    height: 210px;
     }
     .headingOffer{
         font-size: 13.78px;
-        margin-top: 25px;
+        margin-top: 31px;
     }
     .headingBirthday{
         font-size: 21px;

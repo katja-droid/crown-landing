@@ -118,12 +118,13 @@ font-weight: 300;
         .content {
             width: 337px;
             height: auto;
-    
+            margin-top: 31px;
           }
         .container{
             min-height: none;
-            height: 1050px;
+            height: 1060px;
             width: 100%;
+            margin: 0;
         }
         .headingOffer{
             font-size: 13.78px;
