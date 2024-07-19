@@ -1,11 +1,10 @@
 /* Home.module.css */
 
 .container {
-    height: 1375px;
+    height: 1260px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    margin-top: 72px;
   }
   
   .content {

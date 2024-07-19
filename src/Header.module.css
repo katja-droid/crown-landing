@@ -90,6 +90,8 @@ flex-direction: column;
     .headerTop{
       
       margin-top:  5px;
+      width: 350px;
+      margin-top: 12px;
     }
     .header{
       height: 288px;
