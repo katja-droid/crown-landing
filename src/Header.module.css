@@ -85,8 +85,7 @@ flex-direction: column;
   @media (max-width: 768px) {
     
     .overlay{
-      
-      height: 288px;
+      height: 100vh;
     }
     .headerTop{
       
@@ -94,7 +93,7 @@ flex-direction: column;
       margin-top: 8px;
     }
     .header{
-      height: 288px;
+      height: 100vh;
       background-size: cover;
       background-image: url('../public/header-bg-mb.png');
     }
@@ -109,9 +108,14 @@ flex-direction: column;
         height: auto;
     }
     .headerBottom{
-      
+      display: flex;
       margin: 28px;
-      height: auto;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+      height: 100%;
+      margin: 28px;
     }
     .headerBottom h1{
       padding: 0;
