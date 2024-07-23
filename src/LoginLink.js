@@ -4,7 +4,7 @@ import styles from './LoginLink.module.css';
 
 const LoginLink = () => {
   return (
-    <Link to="#" className={styles.loginLink}>
+    <Link to="/thankyoupage" className={styles.loginLink}>
       LOGIN
     </Link>
   );

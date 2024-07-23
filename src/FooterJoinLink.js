@@ -4,7 +4,7 @@ import styles from './FooterJoinLink.module.css';
 
 const FooterJoinLink = () => {
   return (
-    <Link to="#" className={styles.footerJoinLink}>
+    <Link to="/thankyoupage" className={styles.footerJoinLink}>
       JOIN CR30WN
     </Link>
   );

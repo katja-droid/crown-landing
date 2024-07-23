@@ -4,6 +4,8 @@ import Home from './Home'
 import Layout from './Layout';
 import './App.css'
 import ReadMore from './ReadMore';
+import Thankyoupage from './Thankyoupage';
+
 const App = () => {
 
   return (
@@ -13,6 +15,7 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="readmore" element={<ReadMore />} />
         </Route>
+        <Route path="thankyoupage" element={<Thankyoupage />} />
       </Routes>
     </Router>
   );
