@@ -4,7 +4,7 @@ import styles from './JoinLink.module.css';
 
 const JoinLink = () => {
   return (
-    <Link to="/thankyoupage" className={styles.joinLink}>
+    <Link to="/index.php" className={styles.joinLink}>
       JOIN CR3OWN
     </Link>
   );

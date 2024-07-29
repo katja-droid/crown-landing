@@ -9,7 +9,7 @@ const TermsAndConditions = () => {
       <div className={styles.container}>
         <div className={styles.content}>
           <h1 className={styles.headingBirthday}>TERMS OF USE</h1>
-          <img className={styles.line} src="home-line.png"></img>
+          <img className={styles.line} src="home-line.png" alt="line"></img>
           <p className={styles.firstText}>Your use of any information, images, and text contained on the Network (together the ‘Material’) is governed by these Terms of Use and the Privacy Policy. You acknowledge and accept that your use of the Network indicates your acceptance of these Terms of Use and the Privacy Policy.</p>
 
 <h2>1. Variation of Terms of Use</h2>

@@ -20,8 +20,9 @@ const Thankyoupage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here
+    // Обработка данных формы здесь, если необходимо
     console.log('Form submitted:', formData);
+    window.location.reload(); // Обновление страницы
   };
 
   return (
@@ -29,7 +30,7 @@ const Thankyoupage = () => {
       <div className={styles.content}>
         <p className={styles.text}>GET IN TOUCH</p>
         <div className={styles.lineDiv}>
-        <img className={styles.line} src="/line.png" alt="Line"></img>
+          <img className={styles.line} src="/line.png" alt="Line"></img>
         </div>
         <p className={styles.paragraph}>
           If you have a question or are looking for specific information about CR30WN Birthday Surprise, please see our contact directory below.
@@ -38,46 +39,50 @@ const Thankyoupage = () => {
         </p>
         <form onSubmit={handleSubmit}>
           <div className={styles.formContainer}>
-          <div className={styles.formGroup}>
-            <label className={styles.inputLabel}>First Name*</label>
-            <input
-              type="text"
-              id="firstName"
-              name="firstName"
-              placeholder="First Name*"
-              value={formData.firstName}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className={styles.formGroup}>
-          <label className={styles.inputLabel}>Email*</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Email*"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className={styles.formGroup}>
-          <label className={styles.inputLabel}>Phone Number*</label>
-            <input
-              type="tel"
-              id="phoneNumber"
-              name="phoneNumber"
-              placeholder="Phone Number*"
-              value={formData.phoneNumber}
-              onChange={handleChange}
-              required
-            />
-          </div>
+            <div className={styles.formGroup}>
+              <label className={styles.inputLabel}>First Name*</label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                placeholder="First Name"
+                value={formData.firstName}
+                onChange={handleChange}
+                required
+                className={styles.inputField}
+              />
+            </div>
+            <div className={styles.formGroup}>
+              <label className={styles.inputLabel}>Email*</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                className={styles.inputField}
+              />
+            </div>
+            <div className={styles.formGroup}>
+              <label className={styles.inputLabel}>Phone Number*</label>
+              <input
+                type="tel"
+                id="phoneNumber"
+                name="phoneNumber"
+                placeholder="Phone Number"
+                value={formData.phoneNumber}
+                onChange={handleChange}
+                required
+                className={styles.inputField}
+              />
+            </div>
           </div>
           <div className={styles.formGroup}>
             <label className={styles.checkbox}>
               <input
+                className={styles.inputField}
                 type="checkbox"
                 name="termsAccepted"
                 checked={formData.termsAccepted}

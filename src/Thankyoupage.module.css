@@ -20,18 +20,19 @@
   text-align: center;
   padding: 0;
 }
-.line{
+.line {
   margin: 0;
   padding: 0;
 }
-.lineDiv{
+.lineDiv {
   display: flex;
   justify-content: flex-start;
 }
-.inputLabel{
-  font-family: 'Helvetica Bold', sans-serif;
-  font-size: 22px;
+.inputLabel {
+  font-family: "Helvetica Bold", sans-serif;
+  font-size: 18px;
   color: #fff;
+  font-weight: 300;
 }
 @media screen and (max-width: 768px) {
   .content {
@@ -40,7 +41,7 @@
 }
 
 .text {
-  font-family: 'Helvetica Bold', sans-serif;
+  font-family: "Helvetica Bold", sans-serif;
   letter-spacing: 0.32px;
   font-weight: 400;
   font-size: 38px;
@@ -51,20 +52,19 @@
   margin-bottom: 32px;
   margin-top: 0;
   text-align: left;
-
 }
 
 .paragraph {
   color: #fff;
   letter-spacing: 0.32px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
-  margin-top: 32px;
+  margin-top: 30px;
   width: 100%;
   text-align: left;
-  font-family: 'Helvetica Regular', sans-serif;
-  margin-bottom: 60px;
+  font-family: "Helvetica Regular", sans-serif;
+  margin-bottom: 30px;
 }
 
 .formGroup {
@@ -73,6 +73,7 @@
   width: 100%;
   flex-direction: column;
   align-items: flex-start;
+  gap: 14px;
 }
 
 input[type="text"],
@@ -82,9 +83,10 @@ input[type="tel"] {
   border: none;
   border-bottom: 1px solid #fff;
   width: 100%;
-  font-size: 20px;
+  font-size: 16px;
   color: #fff;
-  padding: 8px 0;
+  padding: 6px 0px;
+  gap: 24px;
 }
 
 ::placeholder,
@@ -93,9 +95,9 @@ input[type="tel"]::placeholder {
   color: #fff;
   opacity: 0.7;
 }
-input[type="checkbox"]{
-  width: 32px;
-  height: 32px;
+input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
   margin: 12px;
 }
 .checkbox {
@@ -109,7 +111,7 @@ input[type="checkbox"]{
   padding: 0;
   width: 100%;
 }
-.checkbox a{
+.checkbox a {
   text-decoration: underline;
   font-size: 18px;
   color: #fff;
@@ -117,7 +119,7 @@ input[type="checkbox"]{
 .submitButton {
   font-size: 14px;
   color: white;
-  font-family: 'Helvetica Regular', sans-serif;
+  font-family: "Helvetica Regular", sans-serif;
   letter-spacing: 1.44px;
   text-decoration: none;
   width: 202px;
@@ -134,69 +136,76 @@ input[type="checkbox"]{
 .formContainer {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 28px;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
 }
-.paragraph a{
+.paragraph a {
   text-decoration: none;
   color: #fff;
   font-weight: 700;
 }
 @media (max-width: 768px) {
-  .container{
+  .container {
     height: 100vh;
   }
-  
-.text{
-  font-size: 22px;
-  margin-bottom: 0;
-}
-.paragraph{
-  font-size: 14px;
-  margin: 0;
-}
-.inputLabel{
-  font-family: 'Helvetica Bold', sans-serif;
-  font-size: 18px;
-  color: #fff;
-}
-input[type="text"],
-input[type="email"],
-input[type="tel"] {
 
-  font-size: 18px;
+  .text {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+  .paragraph {
+    font-size: 14px;
+    margin: 0;
+  }
+  .inputLabel {
+    font-family: "Helvetica Bold", sans-serif;
+    font-size: 18px;
+    color: #fff;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    font-size: 18px;
+  }
+  .line {
+    width: 48px;
+    margin: 16px 0;
+  }
 
-}
-.line{
-  width: 48px;
-  margin: 16px 0;
+  .formContainer {
+    margin-top: 48px;
+    gap: 48px;
+  }
+  .checkbox {
+    width: 100%;
+    font-size: 14px;
+    padding: 22px 0;
+
+    margin-bottom: 16px;
+    margin-top: 0;
+  }
+  .checkbox a {
+    font-size: 14px;
+  }
+  input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+    margin: 2px 10px;
+    text-align: left;
+  }
+  .submitButton {
+    margin: 0 auto;
+    width: 340px;
+  }
 }
 
-.formContainer {
-  margin-top: 48px;
-  gap: 48px;
+.inputField:focus {
+  outline: none;
 }
-.checkbox{
-  width: 100%;
-  font-size: 14px;
-  padding: 22px 0;
-  
-  margin-bottom: 16px;
-  margin-top: 0;
-}
-.checkbox a{
-  font-size: 14px;
-}
-input[type="checkbox"]{
-  width: 14px;
-  height: 14px;
-  margin: 2px;
-  text-align: left;
-}
-.submitButton{
-  margin: 0 auto;
-  width: 340px;
-}
+
+.inputField:focus {
+  outline: none;
+  box-shadow: none; /* Убираем тень */
 }
