@@ -39,6 +39,7 @@ const Thankyoupage = () => {
         <form onSubmit={handleSubmit}>
           <div className={styles.formContainer}>
           <div className={styles.formGroup}>
+            <label className={styles.inputLabel}>First Name*</label>
             <input
               type="text"
               id="firstName"
@@ -50,6 +51,7 @@ const Thankyoupage = () => {
             />
           </div>
           <div className={styles.formGroup}>
+          <label className={styles.inputLabel}>Email*</label>
             <input
               type="email"
               id="email"
@@ -61,6 +63,7 @@ const Thankyoupage = () => {
             />
           </div>
           <div className={styles.formGroup}>
+          <label className={styles.inputLabel}>Phone Number*</label>
             <input
               type="tel"
               id="phoneNumber"

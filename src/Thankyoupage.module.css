@@ -11,7 +11,8 @@
   background-image: url("../public/Back.png");
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: auto;
+  min-height: 110vh;
 }
 
 .content {
@@ -26,6 +27,11 @@
 .lineDiv{
   display: flex;
   justify-content: flex-start;
+}
+.inputLabel{
+  font-family: 'Helvetica Bold', sans-serif;
+  font-size: 22px;
+  color: #fff;
 }
 @media screen and (max-width: 768px) {
   .content {
@@ -114,7 +120,7 @@ input[type="checkbox"]{
   font-family: 'Helvetica Regular', sans-serif;
   letter-spacing: 1.44px;
   text-decoration: none;
-  width: 339px;
+  width: 202px;
   height: 66px;
   background: transparent;
   border: 2px solid #fff;
@@ -128,7 +134,7 @@ input[type="checkbox"]{
 .formContainer {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 48px;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
@@ -151,6 +157,11 @@ input[type="checkbox"]{
   font-size: 14px;
   margin: 0;
 }
+.inputLabel{
+  font-family: 'Helvetica Bold', sans-serif;
+  font-size: 18px;
+  color: #fff;
+}
 input[type="text"],
 input[type="email"],
 input[type="tel"] {
@@ -164,10 +175,16 @@ input[type="tel"] {
 }
 
 .formContainer {
-  gap: 22px;
+  margin-top: 48px;
+  gap: 48px;
 }
 .checkbox{
+  width: 100%;
   font-size: 14px;
+  padding: 22px 0;
+  
+  margin-bottom: 16px;
+  margin-top: 0;
 }
 .checkbox a{
   font-size: 14px;
@@ -177,5 +194,9 @@ input[type="checkbox"]{
   height: 14px;
   margin: 2px;
   text-align: left;
+}
+.submitButton{
+  margin: 0 auto;
+  width: 340px;
 }
 }
