@@ -5,6 +5,7 @@ import Layout from './Layout';
 import './App.css'
 import ReadMore from './ReadMore';
 import Thankyoupage from './Thankyoupage';
+import TermsAndConditions from './TermsAndConditions';
 
 const App = () => {
 
@@ -14,6 +15,8 @@ const App = () => {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="readmore" element={<ReadMore />} />
+          
+        <Route path="termsandconditions" element={<TermsAndConditions/>} />
         </Route>
         <Route path="thankyoupage" element={<Thankyoupage />} />
       </Routes>

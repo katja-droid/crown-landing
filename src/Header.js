@@ -8,18 +8,19 @@ import MobileLink from './MobileLink';
 const Header = () => {
   return (
     <div className={styles.header}>
+      <Link to="/index.php">
       <div className={styles.overlay}>
         <div className={styles.overlayTop}></div>
         <div className={styles.overlayBottom}></div>
       </div>
+      </Link>
       <div className={styles.headerTop}>
         <div className={styles.links}>
           <Link to="/">HOME</Link>
-          <Link to="/readmore">READ MORE</Link>
          
         </div>
         <MobileLink/>
-        <img className={styles.logoHeader} src='/logo.svg' alt="Logo"></img>
+        <Link to="/index.php"><img className={styles.logoHeader} src='/logo.svg' alt="Logo"></img></Link>
         <LoginLink />
       </div>
       <div className={styles.headerBottom}>

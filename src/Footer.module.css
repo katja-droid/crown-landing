@@ -1,4 +1,5 @@
-.footer{
+.footer {
+    position: relative; /* Add this to ensure the overlay positions correctly within the footer */
     display: flex;
     align-items: center;
     height: 382px;
@@ -6,19 +7,24 @@
     background-image: url('../public/footerbg.png');
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: hidden; /* Ensure overflow is handled correctly */
 }
-.footerContent{
+
+.footerContent {
     display: flex;
     margin-left: 12.4%;
+    position: relative; /* Ensure footerContent is positioned relative for overlay layering */
+    z-index: 1; /* Ensure footerContent is above the overlay */
 }
-.footerRight{
-margin-left: 93px;
-display: flex;
-flex-direction: column;
-cursor: default;
+
+.footerRight {
+    margin-left: 93px;
+    display: flex;
+    flex-direction: column;
+    cursor: default;
 }
-.footer h1{
+
+.footer h1 {
     font-family: 'Didot';
     font-weight: 400;
     color: #fff;
@@ -29,7 +35,8 @@ cursor: default;
     cursor: default;
     width: 492px;
 }
-.text{
+
+.text {
     font-family: 'Helvetica Light', sans-serif;
     color: #fff;
     font-size: 14px;
@@ -43,58 +50,104 @@ cursor: default;
     font-weight: 300;
 }
 
+.overlay {
+    position: absolute; /* Position overlay absolutely within footer */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0); /* Semi-transparent red background */
+    z-index: 0; /* Ensure it is below the content */
+    height: 100%;
+    width: 100%;
+}
+.footerLinks{
+    display: flex;
+    justify-content: flex-start;
+    
+    padding-top: 50px;
+    width: 80%;
+}
+.footerLinks a{
+    text-decoration: none;
+    font-family: 'Helvetica Light', sans-serif;
+    color: #fff;
+    font-size: 18px;
+
+}
+.footerLinks a:not(:first-child){
+    padding-left: 20px;
+    
+
+}
 @media (max-width: 768px) {
-    .footer{
+    .footer {
         width: 100vw;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 505px;
-        
-    background-image: url('../public/footerbg-mb.png');
+        height: 545px;
+        background-image: url('../public/footerbg-mb.png');
     }
-    .footerContent{
+    .footerContent {
         margin: 0;
         flex-direction: column;
         width: 100vw;
         justify-content: center;
         align-items: center;
     }
-    .footerImg{
+    .footerImg {
         margin: 0;
         padding: 0;
         width: 119px;
     }
-    .footerLeft{
+    .footerLeft {
         margin: 0;
         padding: 0;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .footerRight{
+    .footerRight {
         margin: 0;
         padding: 0;
-        
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .footerRight h1{
+    .footerRight h1 {
         font-size: 24px;
         text-align: center;
         width: 270px;
         line-height: 31.2px;
         padding-top: 27px;
     }
-    .text{
+    .text {
         text-align: center;
-     width: 290.48px;
-     letter-spacing: 0.32px;
-     font-size: 14px;
-     font-weight: 300;
-     line-height: 26px;
-     margin-top: 27px;
+        width: 290.48px;
+        letter-spacing: 0.32px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 26px;
+        margin-top: 27px;
+    }
+    .footerLinks{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-content: center;
+        padding-top: 20px;
+    }
+    .footerLinks a{
+       font-size: 14px;
+       padding: 10px;
+    width: auto;
+    text-align: center;
+    }
+    .footerLinks a:not(:first-child){
+        padding-left: 0;
+        
+    
     }
 }

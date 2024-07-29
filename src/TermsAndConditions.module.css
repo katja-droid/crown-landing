@@ -1,0 +1,100 @@
+/* Home.module.css */
+
+.container {
+    height: 1500px;
+    display: flex;
+    justify-content: center;
+    margin-top: 72px;
+    
+    width: 100%;
+  }
+  
+  .content {
+    width: 898px;
+  }
+ h2{
+    text-transform: uppercase;
+ }
+.text{
+    margin: 24px 0;
+    font-family: 'Helvetica Light', sans-serif;
+    font-size: 15.75px;
+    letter-spacing: 0.32px;
+    line-height: 26px;
+}
+.firstText{
+    margin: 24px 0;
+    font-family: 'Helvetica Light', sans-serif;
+    font-size: 15.75px;
+    letter-spacing: 0.32px;
+    line-height: 26px;
+    margin-top: 0;
+}
+.line{
+    padding: 32px 0;
+  }
+
+    @media (max-width: 768px) {
+        .content {
+            width: 337px;
+            height: auto;
+            margin-top: 31px;
+          }
+        .container{
+            min-height: none;
+            height: auto;
+            width: 100%;
+            margin: 0;
+        }
+       
+ 
+      
+        .headingBirthday{
+            font-size: 21px;
+            margin-top: 0;
+            width: 100%;
+        }
+        .line{
+            width: 48px;
+            padding: 16px 0;
+        }
+        .firstText{
+            font-size: 13.78px;
+        }
+        .text{
+            margin: 16px 0;
+            font-family: 'Helvetica Light', sans-serif;
+            width: 100%;
+            font-weight: 300;
+            font-size: 13.78px;
+            letter-spacing: 0.28px;
+            line-height: 24px;
+        }
+        h2{
+            font-size: 18px;
+        }
+    }
+    ul {
+        margin: 16px 0;
+        padding-left: 20px;
+        list-style-type: none; /* Remove default bullets */
+        counter-reset: list-counter; /* Initialize the counter */
+    }
+    
+    ul li {
+        position: relative; /* Allows positioning of the letters */
+        margin-bottom: 8px;
+        padding-left: 30px; /* Space for the letter */
+        font-family: 'Helvetica Light', sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    
+    ul li::before {
+        content: counter(list-counter, lower-alpha) ") "; /* Use lowercase letters with parenthesis */
+        counter-increment: list-counter; /* Increment the counter */
+        position: absolute;
+        left: 0;
+        font-family: 'Helvetica', sans-serif; /* Ensure consistent font */
+    }
+      
