@@ -4,7 +4,7 @@ import styles from './LoginLink.module.css';
 
 const LoginLink = () => {
   return (
-    <Link to="/thankyoupage" className={styles.loginLink}>
+    <Link to="index.php" className={styles.loginLink}>
       SIGN UP
     </Link>
   );

@@ -10,7 +10,7 @@ const Footer = () => {
 
       <div className={styles.footerContent}>
         <div className={styles.footerLeft}>
-        <Link to="/index.php"> <img className={styles.footerImg} src="footer-img.svg" alt="Footer Image" /></Link>
+        <Link to="/index.php"> <img className={styles.footerImg} src="footer-img.svg" alt="FooterImage" /></Link>
         </div>
         <div className={styles.footerRight}>
           <h1>Access Exclusive CR30WN Offers</h1>
@@ -18,7 +18,7 @@ const Footer = () => {
           <p className={styles.text}>Join our inner circle and enjoy the value of being in the know</p>
           <FooterJoinLink />
           <div className={styles.footerLinks}>
-          <Link to="/thankyoupage">Contact us</Link>
+          <Link to="thankyoupage.html">Contact us</Link>
           <Link to="/termsandconditions">Terms and Conditions</Link>
           </div>
         </div>
