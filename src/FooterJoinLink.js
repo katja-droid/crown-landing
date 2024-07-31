@@ -4,7 +4,11 @@ import styles from './FooterJoinLink.module.css';
 
 const FooterJoinLink = () => {
   return (
-    <Link to="/index.php" className={styles.footerJoinLink}>
+    <Link
+      to="https://melbourne-30.com/thankyoupage/index.php"
+      className={styles.footerJoinLink}
+      target="_blank" 
+      rel="noopener noreferrer">
       JOIN CR30WN
     </Link>
   );

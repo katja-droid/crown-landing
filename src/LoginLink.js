@@ -4,7 +4,11 @@ import styles from './LoginLink.module.css';
 
 const LoginLink = () => {
   return (
-    <Link to="index.php" className={styles.loginLink}>
+    <Link
+      to="https://melbourne-30.com/thankyoupage/index.php"
+      className={styles.loginLink}
+      target="_blank" 
+      rel="noopener noreferrer">
       SIGN UP
     </Link>
   );

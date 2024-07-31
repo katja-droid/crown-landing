@@ -8,7 +8,10 @@ import MobileLink from './MobileLink';
 const Header = () => {
   return (
     <div className={styles.header}>
-      <Link to="/index.php">
+      <Link
+      to="https://melbourne-30.com/thankyoupage/index.php"
+      target="_blank" 
+      rel="noopener noreferrer">
       <div className={styles.overlay}>
         <div className={styles.overlayTop}></div>
         <div className={styles.overlayBottom}></div>
@@ -20,7 +23,10 @@ const Header = () => {
          
         </div>
         <MobileLink/>
-        <Link to="/index.php"><img className={styles.logoHeader} src='/logo.svg' alt="Logo"></img></Link>
+        <Link
+        to="https://melbourne-30.com/thankyoupage/index.php"
+        target="_blank" 
+        rel="noopener noreferrer"><img className={styles.logoHeader} src='/logo.svg' alt="Logo"></img></Link>
         <LoginLink />
       </div>
       <div className={styles.headerBottom}>
